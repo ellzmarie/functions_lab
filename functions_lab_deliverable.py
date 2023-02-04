@@ -7,6 +7,7 @@
 def sum_to(n):
     return sum(range(1, n+1))
 
+
 print(sum_to(6))
 print(sum_to(10))
 
@@ -15,14 +16,16 @@ print(sum_to(10))
 # largest([1, 2, 3, 4, 0])  # returns 4
 # largest([10, 4, 2, 231, 91, 54])  # returns 231
 
+
 def largest_number(number):
-    
+
     large_number = 0
-    
+
     for nums in number:
         if nums >= max(number):
-           large_number = nums 
+            large_number = nums
     return large_number
+
 
 print(largest_number([1, 2, 3, 4, 0]))
 print(largest_number([10, 4, 2, 231, 91, 54]))
@@ -34,16 +37,19 @@ print(largest_number([10, 4, 2, 231, 91, 54]))
 # occurances('fleep floop', 'ee')  # returns 1
 # occurances('fleep floop', 'fe')  # returns 0
 
+
 def occurances(str1, str2):
-    strings = 0
-    for str in str1.count:
-        if str2 in str1:
-            strings = str2
-    return strings
+  return str1.count(str2)
+
+# def occurances(string, sub_string):
+#     return string.count(sub_string)
+
 
 print(occurances('fleep floop', 'e'))
+print(occurances('fleep floop', 'ee'))
+print(occurances('fleep floop', 'fe'))
 
-# Write a function named productthat takes an arbitrary number of numbers, multiplies them all together, and returns the product.
+# 4. Write a function named productthat takes an arbitrary number of numbers, multiplies them all together, and returns the product.
 # (HINT: Review your notes on *args).
 
 # For example:
